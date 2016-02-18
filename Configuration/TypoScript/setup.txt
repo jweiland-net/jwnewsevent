@@ -1,0 +1,36 @@
+config.tx_extbase {
+  objects {
+    GeorgRinger\News\Domain\Model\News.className = JWeiland\Jwnewsevent\Domain\Model\NewsEvent
+    GeorgRinger\News\Domain\Model\NewsDefault.className = JWeiland\Jwnewsevent\Domain\Model\NewsDefault
+    GeorgRinger\News\Domain\Model\NewsExternal.className = JWeiland\Jwnewsevent\Domain\Model\NewsExternal
+    GeorgRinger\News\Domain\Model\NewsInternal.className = JWeiland\Jwnewsevent\Domain\Model\NewsInternal
+  }
+  persistence {
+    classes {
+      JWeiland\Jwnewsevent\Domain\Model\NewsEvent {
+        mapping {
+          recordType = 0
+          tableName = tx_news_domain_model_news
+        }
+      }
+      JWeiland\Jwnewsevent\Domain\Model\NewsDefault {
+        mapping {
+          recordType = 0
+          tableName = tx_news_domain_model_news
+        }
+      }
+      JWeiland\Jwnewsevent\Domain\Model\NewsExternal {
+        mapping {
+          recordType = 1
+          tableName = tx_news_domain_model_news
+        }
+      }
+      JWeiland\Jwnewsevent\Domain\Model\NewsInternal {
+        mapping {
+          recordType = 2
+          tableName = tx_news_domain_model_news
+        }
+      }
+    }
+  }
+}
