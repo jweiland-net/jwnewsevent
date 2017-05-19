@@ -24,12 +24,11 @@ namespace JWeiland\Jwnewsevent\Domain\Model;
  *
  *  This copyright notice MUST APPEAR in all copies of the script!
  ***************************************************************/
-use GeorgRinger\News\Domain\Model\News;
 
 /**
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  */
-class NewsEvent extends News
+class News
 {
     /**
      * isEvent
