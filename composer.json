@@ -1,0 +1,53 @@
+{
+	"name": "jweiland/jwnewsevent",
+	"type": "typo3-cms-extension",
+	"description": "Extend news to use them also as event",
+	"license": "GPL-2.0-or-later",
+	"keywords": [
+		"typo3",
+		"TYPO3 CMS",
+		"news",
+		"event",
+		"news event"
+	],
+	"homepage": "http://www.jweiland.net",
+	"authors": [
+		{
+			"name": "Stefan Froemken",
+			"email": "projects@jweiland.net",
+			"role": "Developer"
+		}
+	],
+	"support": {
+		"email": "projects@jweiland.net",
+		"issues": "https://github.com/jweiland-net/jwnewsevent/issues",
+		"source": "https://github.com/jweiland-net/jwnewsevent"
+	},
+	"require": {
+		"typo3/cms-core": "^9.5.17 || ^10.4.2",
+		"georgringer/news": "^8.0"
+	},
+	"require-dev": {
+		"friendsofphp/php-cs-fixer": "^2.14",
+		"nimut/testing-framework": "^5.1"
+	},
+	"autoload": {
+		"psr-4": {
+			"JWeiland\\Jwnewsevent\\": "Classes"
+		}
+	},
+	"config": {
+		"vendor-dir": ".build/vendor"
+	},
+	"extra": {
+		"typo3/cms": {
+			"app-dir": ".build",
+			"web-dir": ".build/public"
+		}
+	},
+	"scripts": {
+		"php:fix": ".build/vendor/bin/php-cs-fixer --config=Build/.php_cs.php fix",
+		"ci:php:lint": "find *.php Classes Configuration -name '*.php' -print0 | xargs -0 -n 1 -P 4 php -l",
+		"ci:php:fixer": ".build/vendor/bin/php-cs-fixer --config=Build/.php_cs.php fix --dry-run -v --show-progress=dots --diff-format=udiff"
+	}
+}

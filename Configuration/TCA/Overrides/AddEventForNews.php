@@ -1,48 +1,60 @@
 <?php
-$eventColumns = array(
-    'is_event' => array(
+
+/*
+ * This file is part of the package jweiland/jwnewsevent.
+ *
+ * For the full copyright and license information, please read the
+ * LICENSE file that was distributed with this source code.
+ */
+
+$eventColumns = [
+    'is_event' => [
         'exclude' => 1,
         'label' => 'LLL:EXT:jwnewsevent/Resources/Private/Language/locallang_db.xlf:tx_news_domain_model_news.is_event',
-        'config' => array(
+        'config' => [
             'type' => 'check',
             'default' => false,
-        ),
-    ),
-    'event_start' => array(
+        ],
+    ],
+    'event_start' => [
         'exclude' => 1,
         'label' => 'LLL:EXT:jwnewsevent/Resources/Private/Language/locallang_db.xlf:tx_news_domain_model_news.event_start',
-        'config' => array(
+        'config' => [
             'type' => 'input',
             'size' => 15,
-            'eval' => 'datetime'
-        ),
-    ),
-    'event_end' => array(
+            'renderType' => 'inputDateTime',
+            'default' => 0,
+            'eval' => 'datetime,int'
+        ],
+    ],
+    'event_end' => [
         'exclude' => 1,
         'label' => 'LLL:EXT:jwnewsevent/Resources/Private/Language/locallang_db.xlf:tx_news_domain_model_news.event_end',
-        'config' => array(
+        'config' => [
             'type' => 'input',
             'size' => 15,
-            'eval' => 'datetime'
-        ),
-    ),
-    'location' => array(
+            'renderType' => 'inputDateTime',
+            'default' => 0,
+            'eval' => 'datetime,int'
+        ],
+    ],
+    'location' => [
         'exclude' => 1,
         'label' => 'LLL:EXT:jwnewsevent/Resources/Private/Language/locallang_db.xlf:tx_news_domain_model_news.location',
-        'config' => array(
+        'config' => [
             'type' => 'input',
             'size' => 50,
-        ),
-    ),
-    'organizer' => array(
+        ],
+    ],
+    'organizer' => [
         'exclude' => 1,
         'label' => 'LLL:EXT:jwnewsevent/Resources/Private/Language/locallang_db.xlf:tx_news_domain_model_news.organizer',
-        'config' => array(
+        'config' => [
             'type' => 'input',
             'size' => 50,
-        ),
-    ),
-);
+        ],
+    ],
+];
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tx_news_domain_model_news', $eventColumns);
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
