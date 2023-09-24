@@ -10,7 +10,7 @@
 		"event",
 		"news event"
 	],
-	"homepage": "http://www.jweiland.net",
+	"homepage": "https://jweiland.net",
 	"authors": [
 		{
 			"name": "Stefan Froemken",
@@ -30,6 +30,9 @@
 	"require-dev": {
 		"friendsofphp/php-cs-fixer": "^2.14",
 		"nimut/testing-framework": "^5.1"
+	},
+	"replace": {
+		"typo3-ter/jwnewsevent": "self.version"
 	},
 	"autoload": {
 		"psr-4": {
