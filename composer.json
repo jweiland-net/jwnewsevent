@@ -54,8 +54,8 @@
 		}
 	},
 	"scripts": {
-		"php:fix": ".Build/vendor/bin/php-cs-fixer --config=Build/.php_cs.php fix",
+		"php:fix": ".Build/bin/php-cs-fixer --config=Build/.php_cs.php fix",
 		"ci:php:lint": "find *.php Classes Configuration -name '*.php' -print0 | xargs -0 -n 1 -P 4 php -l",
-		"ci:php:fixer": ".Build/vendor/bin/php-cs-fixer --config=Build/.php_cs.php fix --dry-run -v --show-progress=dots --diff-format=udiff"
+		"ci:php:fixer": ".Build/bin/php-cs-fixer --config=Build/.php_cs.php fix --dry-run -v --show-progress=dots --diff Classes"
 	}
 }
