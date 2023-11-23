@@ -15,12 +15,11 @@ $EM_CONF[$_EXTKEY] = [
     'author_email' => 'projects@jweiland.net',
     'author_company' => 'jweiland.net',
     'state' => 'stable',
-    'clearCacheOnLoad' => 0,
-    'version' => '2.0.0',
+    'version' => '3.0.0',
     'constraints' => [
         'depends' => [
-            'typo3' => '9.5.17-10.4.99',
-            'news' => '8.0.0-8.99.99'
+            'typo3' => '11.5.0-12.4.99',
+            'news' => '11.2.0-11.2.99'
         ],
         'conflicts' => [
         ],

@@ -24,12 +24,11 @@
 		"source": "https://github.com/jweiland-net/jwnewsevent"
 	},
 	"require": {
-		"typo3/cms-core": "^9.5.17 || ^10.4.2",
-		"georgringer/news": "^8.0"
+		"typo3/cms-core": "^11.5.33 || ^12.4.8",
+		"georgringer/news": "^11.2"
 	},
 	"require-dev": {
-		"friendsofphp/php-cs-fixer": "^2.14",
-		"nimut/testing-framework": "^5.1"
+		"friendsofphp/php-cs-fixer": "^3.14"
 	},
 	"replace": {
 		"typo3-ter/jwnewsevent": "self.version"
@@ -40,17 +39,23 @@
 		}
 	},
 	"config": {
-		"vendor-dir": ".build/vendor"
+		"vendor-dir": ".Build/vendor",
+		"bin-dir": ".Build/bin",
+		"allow-plugins": {
+			"typo3/cms-composer-installers": true,
+			"typo3/class-alias-loader": true
+		}
 	},
 	"extra": {
 		"typo3/cms": {
-			"app-dir": ".build",
-			"web-dir": ".build/public"
+			"extension-key": "jwnewsevent",
+			"app-dir": ".Build",
+			"web-dir": ".Build/public"
 		}
 	},
 	"scripts": {
-		"php:fix": ".build/vendor/bin/php-cs-fixer --config=Build/.php_cs.php fix",
+		"php:fix": ".Build/vendor/bin/php-cs-fixer --config=Build/.php_cs.php fix",
 		"ci:php:lint": "find *.php Classes Configuration -name '*.php' -print0 | xargs -0 -n 1 -P 4 php -l",
-		"ci:php:fixer": ".build/vendor/bin/php-cs-fixer --config=Build/.php_cs.php fix --dry-run -v --show-progress=dots --diff-format=udiff"
+		"ci:php:fixer": ".Build/vendor/bin/php-cs-fixer --config=Build/.php_cs.php fix --dry-run -v --show-progress=dots --diff-format=udiff"
 	}
 }
