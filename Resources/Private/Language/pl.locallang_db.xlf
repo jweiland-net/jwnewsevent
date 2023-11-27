@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2016-01-28T14:03:40Z" product-name="jwnewsevent" target-language="pl">
+    <header/>
+    <body>
+      <trans-unit id="news_tab_event" xml:space="preserve">
+				<source>Event</source>
+			<target state="needs-translation">Event</target></trans-unit>
+      <trans-unit id="tx_news_domain_model_news.is_event">
+        <source>Is this record an event?</source>
+        <target state="needs-translation">Is this record an event?</target>
+      </trans-unit>
+      <trans-unit id="tx_news_domain_model_news.event_start">
+        <source>Event start</source>
+        <target state="needs-translation">Event start</target>
+      </trans-unit>
+      <trans-unit id="tx_news_domain_model_news.event_end">
+        <source>Event end</source>
+        <target state="needs-translation">Event end</target>
+      </trans-unit>
+      <trans-unit id="tx_news_domain_model_news.location">
+        <source>Location</source>
+        <target state="needs-translation">Location</target>
+      </trans-unit>
+      <trans-unit id="tx_news_domain_model_news.organizer">
+        <source>Organizer</source>
+        <target state="needs-translation">Organizer</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
