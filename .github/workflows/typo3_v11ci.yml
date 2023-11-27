@@ -1,5 +1,5 @@
 # Adapted from https://github.com/TYPO3GmbH/blog/blob/master/.github/workflows/ci.yml
-name: jwnewsevent test suite for TYPO3 12
+name: jwnewsevent test suite for TYPO3 11
 
 on: [pull_request]
 
