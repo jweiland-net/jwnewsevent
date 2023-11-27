@@ -1,0 +1,36 @@
+# Adapted from https://github.com/TYPO3GmbH/blog/blob/master/.github/workflows/ci.yml
+name: EXT:jwnewsevent test suite for TYPO3 12 LTS
+
+on: [pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        typo3: [^12.4]
+        php: [8.1']
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup PHP ${{ matrix.php }}, with composer and extensions
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          extensions: mbstring, dom, zip
+
+      - name: Validate composer.json and composer.lock
+        run: composer validate
+
+      - name: Install dependencies with typo3/cms-core:${{ matrix.typo3 }}
+        run: |
+          composer require typo3/cms-core:${{ matrix.typo3 }} --no-progress
+          git checkout composer.json
+
+      - name: php-cs-fixer
+        run: composer ci:php:fixer
+
+      - name: Lint PHP
+        run: composer ci:php:lint
