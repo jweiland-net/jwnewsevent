@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <xliff version="1.0">
-  <file source-language="en" datatype="plaintext" original="messages" date="2016-01-28T14:03:40Z" product-name="jwnewsevent" target-language="de">
+  <file source-language="en" datatype="plaintext" original="messages" date="2016-01-28T14:03:40Z" product-name="jwnewsevent" target-language="he">
     <header/>
     <body>
-      <trans-unit id="news_tab_event" xml:space="preserve">
-				<source>Event</source>
-			<target state="needs-translation">Event</target></trans-unit>
       <trans-unit id="tx_news_domain_model_news.is_event">
         <source>Is this record an event?</source>
         <target state="needs-translation">Is this record an event?</target>
