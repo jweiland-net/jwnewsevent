@@ -2,3 +2,5 @@
 /.gitignore export-ignore
 /Build export-ignore
 /.github export-ignore
+/.editorconfig export-ignore
+/.crowdin.yml export-ignore
