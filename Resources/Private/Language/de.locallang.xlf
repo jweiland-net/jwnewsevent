@@ -3,25 +3,25 @@
   <file source-language="en" datatype="plaintext" original="messages" date="2016-01-28T14:03:40Z" product-name="jwnewsevent" target-language="de">
     <header/>
     <body>
-      <trans-unit id="tx_news_domain_model_news.is_event">
+      <trans-unit id="tx_news_domain_model_news.is_event" approved="yes">
         <source>Is this record an event?</source>
-        <target state="needs-translation">Is this record an event?</target>
+        <target state="final">Handelt es sich um eine Veranstaltung?</target>
       </trans-unit>
-      <trans-unit id="tx_news_domain_model_news.event_start">
+      <trans-unit id="tx_news_domain_model_news.event_start" approved="yes">
         <source>Event start</source>
-        <target state="needs-translation">Event start</target>
+        <target state="final">Start der Veranstaltung</target>
       </trans-unit>
-      <trans-unit id="tx_news_domain_model_news.event_end">
+      <trans-unit id="tx_news_domain_model_news.event_end" approved="yes">
         <source>Event end</source>
-        <target state="needs-translation">Event end</target>
+        <target state="final">Ende der Veranstaltung</target>
       </trans-unit>
-      <trans-unit id="tx_news_domain_model_news.location">
+      <trans-unit id="tx_news_domain_model_news.location" approved="yes">
         <source>Location</source>
-        <target state="needs-translation">Location</target>
+        <target state="final">Veranstaltungsort</target>
       </trans-unit>
-      <trans-unit id="tx_news_domain_model_news.organizer">
+      <trans-unit id="tx_news_domain_model_news.organizer" approved="yes">
         <source>Organizer</source>
-        <target state="needs-translation">Organizer</target>
+        <target state="final">Veranstalter</target>
       </trans-unit>
     </body>
   </file>
