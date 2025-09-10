@@ -16,3 +16,9 @@ This extension add these new fields which you also can use in your templates:
 * eventEnd: Field for date and time
 * organizer: A simple text field
 * location: A simple text field
+
+## Support
+
+Free Support is available via [Github Issue Tracker](https://github.com/jweiland-net/jwnewsevent/issues).
+
+For commercial support, please contact us at [support@jweiland.net](support@jweiland.net).
