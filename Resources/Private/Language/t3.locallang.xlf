@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2016-01-28T14:03:40Z" product-name="jwnewsevent" target-language="t3">
+    <header/>
+    <body>
+      <trans-unit id="tx_news_domain_model_news.is_event">
+        <source>Is this record an event?</source>
+        <target>crwdns297854:0crwdne297854:0</target>
+      </trans-unit>
+      <trans-unit id="tx_news_domain_model_news.event_start">
+        <source>Event start</source>
+        <target>crwdns297856:0crwdne297856:0</target>
+      </trans-unit>
+      <trans-unit id="tx_news_domain_model_news.event_end">
+        <source>Event end</source>
+        <target>crwdns297858:0crwdne297858:0</target>
+      </trans-unit>
+      <trans-unit id="tx_news_domain_model_news.location">
+        <source>Location</source>
+        <target>crwdns297860:0crwdne297860:0</target>
+      </trans-unit>
+      <trans-unit id="tx_news_domain_model_news.organizer">
+        <source>Organizer</source>
+        <target>crwdns297862:0crwdne297862:0</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
